@@ -2,173 +2,150 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./image1.png" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Loice's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loice Teta - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-rose-100">
-
-  <!-- Header -->
-  <header class="flex justify-between items-center bg-gray-900 md:px-20 md:py-4 px-4 py-4 text-orange-100">
-    <div class="text-lg font-bold">Loice Teta</div>
-    <nav class="space-x-4 text-sm md:text-base">
-      <a href="#Home" class="hover:text-sky-500">Home</a>
-      <a href="#About" class="hover:text-sky-500">About</a>
-      <a href="#Projects" class="hover:text-sky-500">Projects</a>
-      <a href="#Contact" class="hover:text-sky-500">Contact</a>
+<body class="bg-red-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-red-950 text-white shadow z-50">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-lg font-bold">Loice Teta</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-[#f97316] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#f97316] transition">About</a></li>
+        <li><a href="#projects" class="hover:text-[#f97316] transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-[#f97316] transition">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Home Section -->
-    <section id="Home" class="flex flex-col mt-20 items-center justify-center px-4 text-center">
-      <div class="h-80 w-80 md:mb-12">
-        <img src="./profile.png" alt="Loice's profile"
-          class="rounded-full h-[300px] w-[300px] object-cover border-4 border-zinc-600 shadow-2xl shadow-zinc-700 mx-auto">
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+    <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-6">
+      <img src="profile.png" alt="Profile" class="w-full h-full object-cover">
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold mb-3">Welcome To My World</h2>
+    <p class="max-w-lg text-gray-600 mb-6">
+      I'm Loice Teta, a passionate software developer creating amazing digital experiences.
+    </p>
+    <a href="#projects" class="bg-red-900 text-white px-6 py-2 rounded-md hover:bg-red-950 transition">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="flex justify-center">
+        <img src="image.png" alt="About" class="rounded-lg shadow-md w-80 object-cover">
       </div>
-      <h1 class="text-3xl md:text-4xl text-slate-900 font-semibold">Welcome To My World</h1>
-      <p class="text-lg md:text-xl md:py-4 px-2 max-w-2xl">
-        I'm Loice Teta, a passionate software developer creating amazing digital experiences.
-      </p>
-      <a href="#About"
-        class="mt-4 inline-block bg-gray-900 text-orange-100 px-6 py-3 rounded-full hover:bg-gray-700 transition">
-        Learn More About Me
-      </a>
-    </section>
-
-    <!-- About Section -->
-    <section id="About" class="bg-red-50 px-6 py-16 md:px-16">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About Me</h2>
-      </div>
-
-      <div class="flex flex-col md:flex-row items-center gap-10">
-        <!-- Image -->
-        <div class="h-[350px] w-[350px] rounded-lg overflow-hidden">
-          <img src="./image.png" alt="About Loice"
-            class="w-full h-full object-cover transition-transform duration-500 rounded-xl hover:scale-105" />
-        </div>
-
-        <!-- Text -->
-        <div class="max-w-xl">
-          <p class="text-base md:text-lg text-gray-700 mb-4">
-            Hello! I'm Loice Teta, a dedicated software developer with a passion for creating innovative solutions and
-            beautiful user experiences. I love engaging in simple, elegant designs.
-          </p>
-          <details class="space-y-2">
-            <summary class=" font-semibold text-purple-700">Read more </summary>
-            <p class="text-gray-700">
-              My journey in software development has been driven by curiosity and, honestly, with fear as a total
-              beginner. But I desire to make technology more accessible and useful for everyone. I'm constantly learning
-              new technologies and improving my skills to stay at the forefront of the industry.
-              <br><br>
-              When I'm not coding, you can find me exploring artistry through photography, content creation, and makeup
-              creativity.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="Projects" class="bg-red-50 px-6 py-16 md:px-16">
-      <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Projects</h2>
-        <p class="text-lg text-gray-700 mb-12">
-          A collection of my recent work in frontend development and software engineering.
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-red-950">About Me</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Hello! I'm Loice Teta, a dedicated software developer with a passion for creating
+          innovative solutions and beautiful user experiences. I love engaging in simple, elegant designs.
         </p>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Project Card 1 -->
-          <div
-            class="bg-[#f5f1e6] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="VenueFinder.png" alt="Venue Finder App" class="w-full h-48 object-cover">
-            <div class="p-6 text-left">
-              <h3 class="text-xl font-semibold text-[#0a1f44] mb-2">Venue Finder App</h3>
-              <p class="text-gray-700 mb-4">
-                A platform to find and book venues easily using GPS and calendar APIs. Includes dual views for users and
-                managers.
-              </p>
-              <a href="#" class="text-gray-900 font-medium hover:underline">View Project →</a>
-            </div>
-          </div>
-
-          <!-- Project Card 2 -->
-          <div
-            class="bg-[#f5f1e6] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="image1.png" alt="Resume Website" class="w-full h-48 object-cover">
-            <div class="p-6 text-left">
-              <h3 class="text-xl font-semibold text-[#0a1f44] mb-2">Personal Resume Website</h3>
-              <p class="text-gray-700 mb-4">
-                A responsive website built with HTML, CSS, and JavaScript to showcase my skills, portfolio, and contact
-                details.
-              </p>
-              <a href="#" class="text-gray-900 font-medium hover:underline">View Project →</a>
-            </div>
-          </div>
-
-          <!-- Project Card 3 -->
-          <div
-            class="bg-[#f5f1e6] rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="HealthTracker.png" alt="Awareness Tool" class="w-full h-48 object-cover">
-            <div class="p-6 text-left">
-              <h3 class="text-xl font-semibold text-[#0a1f44] mb-2">Awareness Tool</h3>
-              <p class="text-gray-700 mb-4">
-                A digital tool designed to raise awareness about chronic diseases in my community.
-              </p>
-              <a href="#" class="text-gray-900 font-medium hover:underline">View Project →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="Contact" class="bg-gray-900 text-white py-16 px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-        <!-- Left side -->
         <div>
-          <h2 class="text-3xl font-bold text-orange-100 mb-6">Contact Info</h2>
-          <ul class="space-y-4">
-            <li><span class="font-semibold text-zinc-400">Email:</span>
-              <a href="mailto:teta.loice69@gmail.com" class="hover:underline">teta.loice69@gmail.com</a>
-            </li>
-            <li><span class="font-semibold text-zinc-400">Phone:</span> +250 784-707-367</li>
-            <li><span class="font-semibold text-zinc-400">Location:</span> KK 609st Kigali, Rwanda</li>
-          </ul>
-          <div class="flex space-x-4 mt-6">
-            <a href="#" class="text-orange-100 hover:text-zinc-400 text-2xl"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-orange-100 hover:text-zinc-400 text-2xl"><i class="fab fa-github"></i></a>
-            <a href="#" class="text-orange-100 hover:text-zinc-400 text-2xl"><i class="fab fa-twitter"></i></a>
+          <h4 class="font-semibold mb-2">My Skills</h4>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-white border rounded-full px-4 py-1 shadow text-sm">UI/UX</span>
+            <span class="bg-white border rounded-full px-4 py-1 shadow text-sm">Git</span>
+            <span class="bg-white border rounded-full px-4 py-1 shadow text-sm">Python</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Right side -->
-        <div class="border-2 border-zinc-600 rounded-lg p-6">
-          <form action="#" method="POST" class="space-y-4">
-            <input type="text" placeholder="Your Name"
-              class="w-full p-3 rounded-md bg-black border border-gray-500 text-white focus:border-orange-100 focus:ring-orange-100">
-            <input type="email" placeholder="Your Email"
-              class="w-full p-3 rounded-md bg-black border border-gray-500 text-white focus:border-orange-100 focus:ring-orange-100">
-            <textarea placeholder="Your Message" rows="5"
-              class="w-full p-3 rounded-md bg-black border border-gray-500 text-white focus:border-orange-100 focus:ring-orange-100"></textarea>
-            <button type="submit"
-              class="w-full bg-orange-100 hover:bg-orange-200 text-black font-semibold py-3 rounded-md transition">
-              Send Message
-            </button>
-          </form>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-6 text-center mb-10">
+      <h3 class="text-2xl font-bold mb-2 text-red-950">My Projects</h3>
+      <p class="text-gray-600 max-w-xl mx-auto">
+        A collection of my recent work in frontend development and software engineering.
+      </p>
+    </div>
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col">
+        <img src="VenueFinder.png" alt="Project 1" class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="font-semibold text-lg mb-2">Venue Finder App</h4>
+          <p class="text-gray-600 flex-grow">
+            A platform to find and book venues easily using GPS and calendar APIs.
+          </p>
+          <a href="#" class="mt-3 text-[#f97316] font-medium hover:underline self-start">View Project →</a>
         </div>
       </div>
-    </section>
-  </main>
+      <!-- Project Card 2 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col">
+        <img src="PersonalWebsite.png" alt="Project 2" class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="font-semibold text-lg mb-2">Personal Resume Website</h4>
+          <p class="text-gray-600 flex-grow">
+            A responsive website built with HTML, CSS, and JavaScript to showcase my skills and portfolio.
+          </p>
+          <a href="#" class="mt-3 text-[#f97316] font-medium hover:underline self-start">View Project →</a>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col">
+        <img src="HealthTracker.png" alt="Project 3" class="h-40 w-full object-cover rounded-t-lg">
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="font-semibold text-lg mb-2">Awareness Tool</h4>
+          <p class="text-gray-600 flex-grow">
+            A digital tool designed to raise awareness about chronic diseases in my community.
+          </p>
+          <a href="#" class="mt-3 text-[#f97316] font-medium hover:underline self-start">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Contact Us</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Contact Info -->
+        <div class="flex flex-col justify-center space-y-4">
+          <p>Kigali, Rwanda</p>
+          <p>teta.loice69@gmail.com</p>
+          <p>+250 784 707 367</p>
+          <p>Would love to hear from you. Send me a message below.</p>
+        </div>
+        <!-- Contact Form -->
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+            <input type="text" id="name"
+              class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" id="email"
+              class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+            <textarea id="message" rows="4"
+              class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-red-900 text-white font-semibold py-2 rounded-md hover:bg-red-950 transition">Send
+            Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-gray-400 text-center py-6">
-    <p class="text-sm">&copy; 2025 Loice Teta. All rights reserved.</p>
+  <footer class="bg-red-950 text-white text-center py-4 text-sm">
+    © 2025 Loice Teta. All rights reserved.
   </footer>
-
 </body>
+
 </html>
